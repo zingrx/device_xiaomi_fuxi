@@ -4,7 +4,7 @@ Xiaomi 13 (codenamed _"fuxi"_) is a high-end smartphone from Xiaomi.
 
 It was announced on December 2022. Release date was December 2022.
 
-!:sparkling_heart: Thanks [@YuKongA](https://github.com/YuKongA/)
+:sparkling_heart: Thanks [@YuKongA](https://github.com/YuKongA/)
 
 ## Device specifications
 
