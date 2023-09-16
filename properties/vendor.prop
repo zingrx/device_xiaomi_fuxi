@@ -259,6 +259,7 @@ persist.vendor.dpm.vndr.feature=11
 drm.service.enabled=true
 
 # Fingerprint
+persist.vendor.sys.fp.dump_data=0
 persist.vendor.sys.fp.expolevel=0x88
 persist.vendor.sys.fp.fod.location.X_Y=442,2052
 persist.vendor.sys.fp.fod.size.width_height=196,196
@@ -311,6 +312,8 @@ ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.supports_background_blur=1
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=80
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.all_modes.colorpick_adjust=true
 vendor.gralloc.disable_ubwc=0
@@ -364,6 +367,7 @@ debug.media.video.vpp=false
 debug.stagefright.c2inputsurface=-1
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
+media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.vendor.media.video.frc.support=true
 ro.vendor.media.video.vpp.support=true
 vendor.media.vpp.aie.cade=100
@@ -375,6 +379,7 @@ vendor.media.vpp.aie.ltmsatgain=55
 vendor.media.vpp.aie.ltmsatoff=55
 vendor.media.vpp.debug.value.use=false
 vendor.mm.enable.qcom_parser=16777215
+ro.mediaserver.64b.enable=true
 
 # Misc
 sys.vendor.shutdown.waittime=500

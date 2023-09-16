@@ -1,5 +1,12 @@
+# Doze
+ro.sensor.pickup=xiaomi.sensor.pickup
+ro.sensor.pickup.lower.value=2
+
 # DPM
 persist.vendor.dpm.feature=11
 
 # Radio
 telephony.active_modems.max_count=2
+
+# Media
+vendor.media.target_variant=_kalama

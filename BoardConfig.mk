@@ -7,6 +7,8 @@
 DEVICE_PATH := device/xiaomi/fuxi
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -47,6 +49,9 @@ TARGET_BOOTLOADER_BOARD_NAME := kalama
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := fuxi,2211133C,2211133G
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
@@ -54,18 +59,9 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config/config.fs
 
 # Kernel
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_DTB_SIZE := 2903107
-BOARD_DTB_OFFSET := 0x01F00000
-BOARD_KERNEL_OFFSET := 0x00008000
-BOARD_RAMDISK_OFFSET := 0x01000000
+BOARD_KERNEL_PAGESIZE   := 4096
+BOARD_KERNEL_BASE       := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
-
-TARGET_KERNEL_APPEND_DTB := false
-BOARD_KERNEL_SEPARATED_DTBO := true
 
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
@@ -82,12 +78,12 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swinfo.fingerprint=$(LINEAGE_VERSION) \
     mtdoops.fingerprint=$(LINEAGE_VERSION)
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3 \
-    androidboot.selinux=permissive
+    androidboot.usbcontroller=a600000.dwc3
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4 := true
@@ -95,12 +91,11 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_CLANG_COMPILE := false
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8550
+TARGET_KERNEL_CONFIG := \
+    gki_defconfig
 
-#TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8550
-#TARGET_KERNEL_CONFIG := gki_defconfig
-
-#BOARD_PREBUILT_ODMIMAGE := $(DEVICE_PATH)/prebuilts/odm.img
-BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/prebuilts/vendor.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 
@@ -111,7 +106,7 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat  $(DEVICE_PATH)/
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/prebuilts/modules/ramdisk/modules.blocklist
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/prebuilts/modules/ramdisk/modules.load.recovery))
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/prebuilts/modules/vendor/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/prebuilts/modules/ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/prebuilts/modules/system/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/5.15.41)
@@ -166,8 +161,6 @@ TARGET_USES_QCOM_MM_AUDIO := true
 TARGET_BOARD_PLATFORM := kalama
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno740
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := xiaomi_sm8550
-QCOM_BOARD_PLATFORMS += xiaomi_sm8550
 
 # Power
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
@@ -189,7 +182,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_NO_RECOVERY := false
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USES_RECOVERY_AS_BOOT := false
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := false
 
