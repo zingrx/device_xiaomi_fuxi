@@ -41,9 +41,9 @@ PRODUCT_SYSTEM_NAME := Xiaomi13
 PRODUCT_SYSTEM_DEVICE := Xiaomi13
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="fuxi_global-user 13 TKQ1.220905.001 V14.0.7.0.TMCMIXM release-keys"
+    PRIVATE_BUILD_DESC="fuxi_global-user 13 TKQ1.220905.001 V14.0.9.0.TMCMIXM release-keys"
 
-BUILD_FINGERPRINT := Xiaomi/fuxi_global/fuxi:13/TKQ1.220905.001/V14.0.7.0.TMCMIXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/fuxi_global/fuxi:13/TKQ1.220905.001/V14.0.9.0.TMCMIXM:user/release-keys
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
