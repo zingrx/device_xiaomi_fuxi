@@ -9,6 +9,7 @@ DEVICE_PATH := device/xiaomi/fuxi
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+ALLOW_MISSING_DEPENDENCIES := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -78,7 +79,7 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swinfo.fingerprint=$(LINEAGE_VERSION) \
     mtdoops.fingerprint=$(LINEAGE_VERSION)
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=enforcing
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
