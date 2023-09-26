@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_fuxi.mk
+    $(LOCAL_DIR)/ancient_fuxi.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_fuxi-eng \
-    superior_fuxi-userdebug \
-    superior_fuxi-user
+    ancient_fuxi-eng \
+    ancient_fuxi-userdebug \
+    ancient_fuxi-user

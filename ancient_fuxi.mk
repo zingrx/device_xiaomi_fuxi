@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common superiorOS configurations
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit common ancientOS configurations
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/fuxi/device.mk)
@@ -17,28 +17,20 @@ $(call inherit-product, device/xiaomi/fuxi/device.mk)
 # Inherit from Gapps
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
-## Build Flags
-SUPERIOR_OFFICIAL := false
-BUILD_WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_MATLOG := true
-SYSTEM_OPTIMIZE_JAVA := true
-SYSTEMUI_OPTIMIZE_JAVA := true
-# Maintainer
-PRODUCT_SYSTEM_PROPERTIES += \
-     ro.spos.maintainer=Zinger
+ANCIENT_GAPPS := true
+ANCIENT_OFFICIAL := false
+ANCIENT_WEEABO := false
 
 ## Device identifier
 PRODUCT_DEVICE := fuxi
-PRODUCT_NAME := superior_fuxi
+PRODUCT_NAME := ancient_fuxi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 2211133G
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_SYSTEM_NAME := Xiaomi13
-PRODUCT_SYSTEM_DEVICE := Xiaomi13
+PRODUCT_SYSTEM_NAME := 2211133G
+PRODUCT_SYSTEM_DEVICE := 2211133G
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="fuxi_global-user 13 TKQ1.220905.001 V14.0.9.0.TMCMIXM release-keys"
