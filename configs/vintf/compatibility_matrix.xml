@@ -64,21 +64,4 @@
             <instance>sigmahal64</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.health</name>
-        <!--transport>hwbinder</transport-->
-        <version>1</version>
-        <interface>
-            <name>IHealth</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-	<hal format="aidl" optional="true">
-        <name>android.hardware.power</name>
-        <version>3</version>
-        <interface>
-            <name>IPower</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
 </compatibility-matrix>
