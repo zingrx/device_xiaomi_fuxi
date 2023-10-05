@@ -22,6 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/fuxi/fuxi-vendor.mk)
 
+# Inherit MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+TARGET_SHIPS_GALLERY = true
+
 # SHIPPING API
 BOARD_API_LEVEL := 33
 BOARD_SHIPPING_API_LEVEL := 31
