@@ -79,7 +79,6 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swinfo.fingerprint=$(LINEAGE_VERSION) \
     mtdoops.fingerprint=$(LINEAGE_VERSION)
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=enforcing
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -92,7 +91,7 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CLANG_COMPILE := false
+
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8550
 TARGET_KERNEL_CONFIG := \
     gki_defconfig
