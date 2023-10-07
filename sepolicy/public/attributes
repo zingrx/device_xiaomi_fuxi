@@ -1,4 +1,0 @@
-# custom attributes
-attribute hal_gamepad_server;
-attribute hal_gamepad;
-attribute hal_gamepad_client;
