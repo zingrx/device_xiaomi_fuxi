@@ -662,27 +662,27 @@ function disable_core_ctl() {
     fi
 }
 
-function enable_swap() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
+# function enable_swap() {
+#     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
+#     MemTotal=${MemTotalStr:16:8}
 
-    SWAP_ENABLE_THRESHOLD=1048576
-    swap_enable=`getprop ro.vendor.qti.config.swap`
+#     SWAP_ENABLE_THRESHOLD=1048576
+#     swap_enable=`getprop ro.vendor.qti.config.swap`
 
-    # Enable swap initially only for 1 GB targets
-    if [ "$MemTotal" -le "$SWAP_ENABLE_THRESHOLD" ] && [ "$swap_enable" == "true" ]; then
-        # Static swiftness
-        echo 1 > /proc/sys/vm/swap_ratio_enable
-        echo 70 > /proc/sys/vm/swap_ratio
+#     # Enable swap initially only for 1 GB targets
+#     if [ "$MemTotal" -le "$SWAP_ENABLE_THRESHOLD" ] && [ "$swap_enable" == "true" ]; then
+#         # Static swiftness
+#         echo 1 > /proc/sys/vm/swap_ratio_enable
+#         echo 70 > /proc/sys/vm/swap_ratio
 
-        # Swap disk - 200MB size
-        if [ ! -f /data/vendor/swap/swapfile ]; then
-            dd if=/dev/zero of=/data/vendor/swap/swapfile bs=1m count=200
-        fi
-        mkswap /data/vendor/swap/swapfile
-        swapon /data/vendor/swap/swapfile -p 32758
-    fi
-}
+#         # Swap disk - 200MB size
+#         if [ ! -f /data/vendor/swap/swapfile ]; then
+#             dd if=/dev/zero of=/data/vendor/swap/swapfile bs=1m count=200
+#         fi
+#         mkswap /data/vendor/swap/swapfile
+#         swapon /data/vendor/swap/swapfile -p 32758
+#     fi
+# }
 
 function configure_memory_parameters() {
     # Set Memory parameters.
