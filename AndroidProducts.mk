@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_fuxi.mk
+    $(LOCAL_DIR)/lineage_fuxi.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_fuxi-eng \
-    ancient_fuxi-userdebug \
-    ancient_fuxi-user
+    lineage_fuxi-eng \
+    lineage_fuxi-userdebug \
+    lineage_fuxi-user
