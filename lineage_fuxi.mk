@@ -19,10 +19,10 @@ $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
 ## ROM Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-RISING_MAINTAINER := Zinger
-TARGET_CORE_GMS := false
-WITH_GMS := true
-RISING_BUILDTYPE := COMMUNITY
+ALPHA_MAINTAINER := Zinger
+WITH_GAPPS := true
+ALPHA_BUILD_TYPE := Unofficial
+TARGET_DEFAULT_ADB_ENABLED := true
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
