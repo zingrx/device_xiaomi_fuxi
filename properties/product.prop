@@ -40,9 +40,9 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=false
 
 # Camera
-ro.hardware.camera=xiaomi
-ro.miui.notch=1
 ro.product.mod_device=fuxi_global
+ro.hardware.camera=xiaomi
+ro.com.google.lens.oem_camera_package=com.android.camera
 
 # Radio
 ro.vendor.radio.5g=3
