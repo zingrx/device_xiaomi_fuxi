@@ -88,4 +88,8 @@
     <!-- Configure wifi tcp buffersizes in the form:
          rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
     <string translatable="false" name="config_wifi_tcp_buffers">524288,1048576,16777216,262144,524288,16777216</string>
+
+    <!-- Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Xiaomi 13</string>
+
 </resources>
