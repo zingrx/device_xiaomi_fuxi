@@ -8,7 +8,6 @@ DEVICE_PATH := device/xiaomi/fuxi
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-SKIP_ABI_CHECKS := true
 
 # A/B
 AB_OTA_UPDATER := true
