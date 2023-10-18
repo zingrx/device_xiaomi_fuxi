@@ -357,11 +357,10 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
     FrameworksResTargetFuxi \
-    FrameworksResTargetXiaomi \
     SettingsOverlayChina \
     SettingsOverlayGlobal \
     SettingsProviderOverlay \
-    SettingsResCommonXiaomi \
+    SettingsResCommon \
     SystemUIResCommon \
     SystemUIResCommonFuxi \
     TelecommResCommon \
