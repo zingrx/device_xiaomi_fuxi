@@ -10,3 +10,11 @@ get_prop(platform_app, vendor_displayfeature_prop)
 get_prop(platform_app, vendor_panel_info_prop)
 get_prop(platform_app, vendor_camera_sensor_prop)
 get_prop(platform_app, vendor_audio_prop)
+
+type hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
+type hal_misys_hwservice, hwservice_manager_type;
+
+allow platform_app {
+    hal_camerapostproc_xiaomi_hwservice
+    hal_misys_hwservice
+}:hwservice_manager find;
