@@ -14,10 +14,16 @@ $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/fuxi/device.mk)
 
+# Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# ROM Flags
 ANCIENT_GAPPS := true
 ANCIENT_OFFICIAL := false
 ANCIENT_WEEABO := false
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Device identifier
 PRODUCT_DEVICE := fuxi
