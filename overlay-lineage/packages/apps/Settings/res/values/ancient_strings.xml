@@ -15,7 +15,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+    
+    <!-- AncientOS About Maintainer Info -->
     <string name="maintainer_name">Zinger</string>
+     
+     <!-- AncientOS Device Info -->
+    <string name="ancient_device_name_summary">Xiaomi 13</string>
+    <string name="ancient_chipset_type_summary">Qualcomm Snapdragon™ 8 Gen 2</string>
+    <string name="ancient_gpu_summary">Adreno 740</string>
+    <string name="ancient_camera_mp_summary">50MP + 10MP + 12MP Triple Leica Camera</string>
+    <string name="ancient_screen_type_summary">6.36" AMOLED, 120Hz</string>
 
 </resources>
