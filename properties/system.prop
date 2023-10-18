@@ -24,6 +24,10 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# LMK properties
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=50
+
 # Media
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_kalama.xml
