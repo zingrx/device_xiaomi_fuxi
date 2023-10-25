@@ -278,9 +278,6 @@
     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
     <integer name="config_udfps_illumination_transition_ms">0</integer>
 
-    <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportsScreenOffUdfps">true</bool>
-
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
@@ -447,14 +444,6 @@
          Note: This should be only enabled on devices with high confidence on power measurement.
     -->
     <bool name="config_bg_current_drain_auto_restrict_abusive_apps">true</bool>
-
-    <!-- SystemInfo Sys Nodes -->
-    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone3/temp</string>
-    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
-    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
-    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
-    <integer name="config_sysCPUTempMultiplier">10</integer>
-    <integer name="config_sysBatteryTempMultiplier">10</integer>
 
     <!-- the number of the max cached processes in the system. -->
     <integer name="config_customizedMaxCachedProcesses">64</integer>
