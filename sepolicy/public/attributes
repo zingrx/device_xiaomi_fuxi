@@ -73,3 +73,4 @@ attribute vendor_wcnss_service;
 attribute vendor_sysfs_diag;
 attribute vendor_wifi_vendor_log_data_file;
 attribute vendor_proc_wifi_dbg;
+attribute vendor_sysfs_battery_supply;
