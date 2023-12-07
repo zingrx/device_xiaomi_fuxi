@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ancient_fuxi.mk
+    $(LOCAL_DIR)/aosp_fuxi.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_fuxi-eng \
-    ancient_fuxi-userdebug \
-    ancient_fuxi-user
+    aosp_fuxi-eng \
+    aosp_fuxi-userdebug \
+    aosp_fuxi-user
