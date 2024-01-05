@@ -359,7 +359,6 @@ PRODUCT_PACKAGES += \
     FrameworksResTargetFuxi \
     SettingsOverlayChina \
     SettingsOverlayGlobal \
-    SettingsProviderOverlay \
     SettingsResCommon \
     SystemUIResCommon \
     SystemUIResCommonFuxi \

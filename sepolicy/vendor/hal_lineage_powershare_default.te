@@ -1,2 +1,4 @@
 allow hal_lineage_powershare_default vendor_sysfs_battery_supply:dir search;
 allow hal_lineage_powershare_default vendor_sysfs_battery_supply:file rw_file_perms;
+
+type hal_lineage_powershare_default_exec, exec_type, vendor_file_type, file_type;
