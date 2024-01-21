@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Change navbar default length -->
+    <dimen name="navigation_home_handle_width">170dp</dimen>
+
+    <!-- Change navbar default radius (thickness) -->
+    <dimen name="navigation_handle_radius">1.5dp</dimen>
+</resources>

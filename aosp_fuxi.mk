@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit common ancientOS configurations
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit common aospOS configurations
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/fuxi/device.mk)
@@ -18,16 +18,13 @@ $(call inherit-product, device/xiaomi/fuxi/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # ROM Flags
-ANCIENT_GAPPS := true
-ANCIENT_OFFICIAL := false
-ANCIENT_WEEABO := false
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Device identifier
 PRODUCT_DEVICE := fuxi
-PRODUCT_NAME := ancient_fuxi
+PRODUCT_NAME := aosp_fuxi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 2211133G
 PRODUCT_MANUFACTURER := Xiaomi
