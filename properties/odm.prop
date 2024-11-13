@@ -24,8 +24,5 @@ ro.vendor.qti.va_odm.support=1
 # Bluetooth
 bluetooth.device.default_name=Xiaomi 13
 
-# Marketname
-ro.product.marketname=Xiaomi 13
-
 # USB
 vendor.usb.product_string=Xiaomi 13

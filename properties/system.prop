@@ -58,3 +58,6 @@ ro.hardware.wlan.vendor=qcom
 # LMK properties
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=50
+
+# Marketname
+ro.product.marketname=Xiaomi 13
