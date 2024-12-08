@@ -2869,7 +2869,7 @@ system_ext/etc/wfdconfigsink.xml
 system_ext/lib64/libmmrtpdecoder.so
 system_ext/lib64/libmmrtpencoder.so
 system_ext/lib64/libwfdclient.so
-system_ext/lib64/libwfdcommonutils.so
+-system_ext/lib64/libwfdcommonutils.so
 system_ext/lib64/libwfdconfigutils.so
 system_ext/lib64/libwfddisplayconfig.so
 system_ext/lib64/libwfdmminterface.so
