@@ -2,9 +2,6 @@
 ro.sensor.pickup=xiaomi.sensor.pickup
 ro.sensor.pickup.lower.value=2
 
-# DPM
-persist.vendor.dpm.feature=11
-
 # Radio
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2
@@ -16,3 +13,37 @@ vendor.media.target_variant=_kalama
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
 ro.zram.periodic_wb_delay_hours=24
+
+persist.miui.extm.enable=1
+persist.miui.extm.version=3.0
+persist.sys.debug.fdtrack_abort_threshold=4096
+persist.sys.debug.fdtrack_enable_threshold=2048
+persist.sys.gps.fence=true
+persist.sys.mcd_config_file=/system_ext/etc/mcd_default.conf
+persist.sys.mi_shadow_supported=true
+persist.sys.miui_scout_binder_full_kill_process=true
+persist.sys.miui_scout_enable=true
+persist.sys.oom_crash_on_watchdog=true
+persist.sys.qseelogd=true
+persist.sys.stability.maintain_factory_reboot_days=60
+persist.sys.stability.miui_fbo_enable=true
+persist.sys.stability.reboot_days=7
+persist.sys.support_view_smoothcorner=true
+persist.sys.support_window_smoothcorner=true
+persist.sys.sysrqOnAnr_D_state=true
+persist.vendor.dpm.feature=11
+ro.fota.oem=Xiaomi
+ro.malloc.impl=jemalloc
+ro.miui.block_device_path=/dev/block/bootdevice/by-name
+ro.miui.enable_cloud_verify=true
+ro.miui.has_cust_partition=true
+ro.miui.pm.install.speedinstall=/data/apk-tmp
+ro.miui.remove_uri_80_flag=1
+ro.miui.support_force_enable=1
+ro.miui.ui.font.global_theme_apply=true
+ro.product.system_ext.cert=
+ro.product.system_ext.marketname=
+ro.rom.zone=2
+ro.secureboot.devicelock=1
+ro.support_one_handed_mode=true
+ro.surface_flinger.supports_background_blur=1
