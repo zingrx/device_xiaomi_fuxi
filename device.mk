@@ -389,7 +389,7 @@ PRODUCT_PACKAGES += \
     SettingsResCommon \
     SettingsOverlayChina \
     SettingsOverlayGlobal \
-    SettingsProvider \
+    SettingsProviderResXiaomi13 \
     TelephonyResCommon \
     SystemUIResFuxi \
     WifiResCommon \
