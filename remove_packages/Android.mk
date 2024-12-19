@@ -27,8 +27,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     PrebuiltGmsCoreSc_GoogleCertificates \
     PrebuiltGmsCoreSc_MapsDynamite \
     PrebuiltGmsCoreSc_MeasurementDynamite \
-    GoogleRestore \
-    WellbeingPrebuilt \
     GoogleFeedback
 
 LOCAL_UNINSTALLABLE_MODULE := true
