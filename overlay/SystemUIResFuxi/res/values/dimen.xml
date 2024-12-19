@@ -4,10 +4,10 @@
     <dimen name="status_bar_padding_top">18.0px</dimen>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">4dp</dimen>
+    <dimen name="status_bar_padding_start">1dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">4dp</dimen>
+    <dimen name="status_bar_padding_end">1dp</dimen>
 
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
@@ -20,10 +20,4 @@
 
     <!-- Location on the screen of the center of the physical power button. -->
     <dimen name="physical_power_button_center_screen_location_y">1040px</dimen>
-
-    <!-- Additional gesture navbar lengths -->
-        <!-- Additional gesture navbar lengths -->
-    <dimen name="navigation_home_handle_width_short">80dp</dimen>
-    <dimen name="navigation_home_handle_width">140dp</dimen>
-    <dimen name="navigation_home_handle_width_long">200dp</dimen>
 </resources>
