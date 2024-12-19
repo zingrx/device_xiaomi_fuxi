@@ -1,6 +1,6 @@
 [
   {
-    "repository": "packages_apps_Prebuilts",
-    "target_path": "packages/apps/Prebuilts"
+    "repository": "vendor_apps_prebuilts",
+    "target_path": "vendor/apps/prebuilts"
   }
 ]
