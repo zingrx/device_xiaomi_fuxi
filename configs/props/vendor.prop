@@ -55,6 +55,12 @@ vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.period_size=192
 vendor.qc2audio.per_frame.flac.dec.enabled=true
 vendor.qc2audio.suspend.enabled=true
+# Audio Volume Steps
+ro.config.media_vol_steps=150
+ro.config.media_vol_default=100
+ro.config.vc_call_vol_steps=15
+ro.config.alarm_vol_steps=30
+ro.config.system_vol_steps=30
 
 # Battery
 persist.vendor.battery.health=true
