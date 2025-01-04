@@ -285,10 +285,10 @@ PRODUCT_PACKAGES += \
 
 # IR
 PRODUCT_PACKAGES += \
-    android.hardware.ir-service.example
+    android.hardware.ir@1.0-service.xiaomi
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+    hardware/xiaomi/hidl/consumerir/android.hardware.ir@1.0-service.xiaomi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
 # Keymaster
 PRODUCT_PACKAGES += \
