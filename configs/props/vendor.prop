@@ -3,6 +3,7 @@ persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
 ro.secure=0
 ro.debuggable=1
+ro.force.debuggable=1
 
 # Audio
 aaudio.hw_burst_min_usec=2000
