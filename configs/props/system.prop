@@ -61,3 +61,10 @@ ro.lmk.kill_timeout_ms=50
 
 # Marketname
 ro.product.marketname=Xiaomi 13
+
+# ADB
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+ro.force.debuggable=1
