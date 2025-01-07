@@ -25,9 +25,9 @@ PRODUCT_SYSTEM_NAME := 2211133G
 PRODUCT_SYSTEM_DEVICE := 2211133G
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc=$(call normalize-path-list, "fuxi_global-user 13 TKQ1.221114.001 V816.0.5.0.UMCMIXM release-keys")
+    BuildDesc=$(call normalize-path-list, "fuxi-user 13 TKQ1.221114.001 OS2.3.0.VMCCNXM release-keys")
 
-BUILD_FINGERPRINT := Xiaomi/fuxi_global/fuxi:13/TKQ1.221114.001/V816.0.5.0.UMCMIXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/fuxi/fuxi:13/TKQ1.221114.001/OS2.0.3.0.VMCCNXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_GAPPS_ARCH := arm64
