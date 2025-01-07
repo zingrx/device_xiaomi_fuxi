@@ -24,7 +24,14 @@ $(call inherit-product, vendor/xiaomi/fuxi/fuxi-vendor.mk)
 
 # Prebuilt Apps
 ifeq ($(INCLUDE_PREBUILTS), true)
-    $(call inherit-product-if-exists, vendor/apps/prebuilts/config.mk)
+    $(call inherit-product-if-exists, $(LOCAL_PATH)/prebuilts/config.mk)
+    PRODUCT_SOONG_NAMESPACES += \
+    device/xiaomi/prebuilts
+
+    PRODUCT_PACKAGES += \
+        Gemini \
+        MiRemote \
+        Via
 endif
 
 # Signature Keys

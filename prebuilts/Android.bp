@@ -1,0 +1,35 @@
+
+android_app_import {
+	name: "Gemini",
+	owner: "gapps",
+	apk: "GeminiPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MiRemote",
+	apk: "MiRemotePrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+
+android_app_import {
+    name: "Via",
+    apk: "ViaPrebuilt.apk",
+	preprocessed: true,
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
