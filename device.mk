@@ -32,6 +32,9 @@ ifeq ($(INCLUDE_PREBUILTS), true)
         Gemini \
         MiRemote \
         Via
+    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/Xiaomi13_AGC9.1.agc:system/etc/init/Xiaomi13_AGC9.1.agc
 endif
 
 # Signature Keys
@@ -489,6 +492,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.recovery.qcom.rc \
     init.perf.fuxi.rc \
+    init.postboot.rc \
     init.service.fuxi.rc \
     init.target.rc \
     init.udfps.fuxi.rc \

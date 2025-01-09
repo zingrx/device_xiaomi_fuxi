@@ -1,0 +1,22 @@
+# /system/etc/init/copy_agc_config.rc (You can name it differently, but keep it consistent with device.mk)
+on post-fs-data
+    # Create the necessary directories with correct permissions
+    mkdir /data/media/0/Download 0770 media_rw media_rw
+    chmod 0770 /data/media/0/Download
+    restorecon /data/media/0/Download
+
+    mkdir /data/media/0/Download/AGC9.1 0770 media_rw media_rw
+    chmod 0770 /data/media/0/Download/AGC9.1
+    restorecon /data/media/0/Download/AGC9.1
+
+    mkdir /data/media/0/Download/AGC9.1/configs 0770 media_rw media_rw
+    chmod 0770 /data/media/0/Download/AGC9.1/configs
+    restorecon /data/media/0/Download/AGC9.1/configs
+
+    # Copy the config file
+    copy /system/etc/init/Xiaomi13_AGC9.1.agc /data/media/0/Download/AGC9.1/configs/Xiaomi13_AGC9.1.agc
+
+    # Set correct ownership, permissions, and SELinux context for the copied file
+    chown media_rw:media_rw /data/media/0/Download/AGC9.1/configs/Xiaomi13_AGC9.1.agc
+    chmod 0660 /data/media/0/Download/AGC9.1/configs/Xiaomi13_AGC9.1.agc
+    restorecon /data/media/0/Download/AGC9.1/configs/Xiaomi13_AGC9.1.agc
