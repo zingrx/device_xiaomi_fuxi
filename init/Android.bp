@@ -14,9 +14,3 @@ cc_library_static {
         "system/core/init"
     ]
 }
-
-prebuilt_etc {
-    name: "fstab.zram",
-    src: "fstab.zram",
-    vendor: true,
-}

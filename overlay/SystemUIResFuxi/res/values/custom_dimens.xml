@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Additional gesture navbar lengths -->
-    <dimen name="navigation_home_handle_width_short">80dp</dimen>
-    <dimen name="navigation_home_handle_width">140dp</dimen>
-    <dimen name="navigation_home_handle_width_long">200dp</dimen>
-</resources>

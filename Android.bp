@@ -6,13 +6,23 @@
 
 soong_namespace {
     imports: [
-        "hardware/google/interfaces",
-        "hardware/google/pixel",
-        "hardware/lineage/interfaces/power-libperfmgr",
         "hardware/qcom-caf/bootctrl",
-        "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/xiaomi",
     ],
+}
+
+install_symlink {
+    name: "libqesdk_manager_32bit_stub",
+    vendor: true,
+    installed_location: "lib/libqesdk_manager.so",
+    symlink_target: "/dev/null",
+}
+
+install_symlink {
+    name: "libqesdk2_0_32bit_stub",
+    vendor: true,
+    installed_location: "lib/libqesdk2_0.so",
+    symlink_target: "/dev/null",
 }
 
 install_symlink {
@@ -34,4 +44,25 @@ install_symlink {
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/kiwi_v2/WCNSS_qcom_cfg.ini",
     symlink_target: "/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini",
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_bgservice_interface",
+    interfaces: [
+        "vendor.xiaomi.hardware.bgservice@1.0::IBGService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_campostproc_interface",
+    interfaces: [
+        "vendor.xiaomi.hardware.campostproc@1.0::IMiPostProcService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_quickcamera_interface",
+    interfaces: [
+        "vendor.xiaomi.hardware.quickcamera@1.0::IQuickCameraService",
+    ],
 }

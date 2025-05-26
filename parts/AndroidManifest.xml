@@ -16,12 +16,8 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
 
-    <uses-sdk
-        android:minSdkVersion="31"
-        android:targetSdkVersion="31"/>
-
     <application
-        android:label="@string/app_name"
+        android:label="@string/device_settings_app_name"
         android:persistent="true"
         android:defaultToDeviceProtectedStorage="true"
         android:directBootAware="true">
@@ -32,39 +28,9 @@
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
-        <activity
-            android:name=".speaker.ClearSpeakerActivity"
-            android:exported="true"
-            android:label="@string/clear_speaker_title"
-            android:theme="@style/Theme.SubSettingsBase">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.sound" />
-            <meta-data android:name="com.android.settings.summary"
-                       android:resource="@string/clear_speaker_summary" />
-        </activity>
-
-        <service
-            android:name=".display.ColorModeService"
-            android:permission="ColorModeService">
-        </service>
-
-        <service
-            android:name=".doze.AodBrightnessService"
-            android:exported="true">
-        </service>
-
-        <service
-            android:name=".doze.PocketDetectionService"
-            android:exported="true">
-        </service>
 
         <service
             android:name=".thermal.ThermalProfileTileService"
@@ -77,21 +43,5 @@
             </intent-filter>
         </service>
 
-        <service
-            android:name=".touch.AlwaysOnFingerprintService"
-            android:exported="true">
-        </service>
-
-        <service
-            android:name=".touch.TouchPollingRateService"
-            android:exported="true">
-        </service>
-
-        <service
-            android:name=".touch.TouchOrientationService"
-            android:exported="true">
-        </service>
-
     </application>
 </manifest>
-
