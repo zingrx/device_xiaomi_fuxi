@@ -264,6 +264,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayFuxi \
     SystemUIOverlayFuxi \
     SettingsOverlayFuxi \
+    SettingsProviderResFuxi \
     WifiOverlayFuxi
 
 # Partitions
