@@ -290,6 +290,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libpsi
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    Via
+
 # Radio
 PRODUCT_PACKAGES += \
     libril
