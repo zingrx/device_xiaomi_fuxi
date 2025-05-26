@@ -29,4 +29,7 @@
     <integer-array name="config_wifiDisconnectedScanIntervalScheduleSec">
         <item>20</item>
     </integer-array>
+
+    <!-- Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Xiaomi 13</string>
 </resources>
