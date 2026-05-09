@@ -1,0 +1,9 @@
+# Bluetooth
+bluetooth.device.default_name=Xiaomi 13
+
+# Display
+vendor.display.disable_3d_adaptive_tm=0
+persist.sys.miui_resolution=1080x2400
+
+# USB
+vendor.usb.product_string=Xiaomi 13
