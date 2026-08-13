@@ -32,3 +32,15 @@ BYPASS_CHARGE_SUPPORTED := true
 
 # Prebuilts
 INCLUDE_PREBUILTS := true
+
+# AxionOS 
+WITH_GMS := true
+TARGET_INCLUDE_GOOGLE_TELECOMM := true
+TARGET_INCLUDE_PARTNER_SETUP := true
+TARGET_INCLUDE_AXFX := true
+AXION_MAINTAINER := 🔻neural0x🔻
+AXION_CAMERA_REAR_INFO := 50,10,12
+AXION_CAMERA_FRONT_INFO := 32
+AXION_PROCESSOR := Snapdragon_8_Gen_2
+HBM_SUPPORTED := true
+HBM_NODE := /sys/class/backlight/panel0-backlight/max_brightness
