@@ -27,9 +27,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/camerax-vendor-extensions.xml
 
-# Dolby by Lunaris
-PRODUCT_PACKAGES += \
-    LunarisDolby
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.fuxi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fuxi.rc \
@@ -56,8 +53,3 @@ endif
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# # Limit dex2oat to use fewer threads to preserve RAM/Stability
-# PRODUCT_PROPERTY_OVERRIDES += \
-#     dalvik.vm.dex2oat-threads=4 \
-#     dalvik.vm.boot-dex2oat-threads=4
