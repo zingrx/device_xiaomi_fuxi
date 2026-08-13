@@ -18,17 +18,17 @@
 
     <!-- Navigation pill length modes for Xiaomi Fuxi (Phone/Small Screen only) -->
     <!-- Mode 0: Shortest, Mode 1: Short, Mode 2: Normal, Mode 3: Long, Mode 4: Longest -->
-    <dimen name="taskbar_stashed_small_screen_shortest">75dp</dimen>
+    <!-- <dimen name="taskbar_stashed_small_screen_shortest">75dp</dimen> -->
     <dimen name="taskbar_stashed_small_screen_short">90dp</dimen>
-    <dimen name="taskbar_stashed_small_screen">110dp</dimen>
-    <dimen name="taskbar_stashed_small_screen_long">180dp</dimen>
-    <dimen name="taskbar_stashed_small_screen_longest">210dp</dimen>
+    <dimen name="taskbar_stashed_small_screen">140dp</dimen>
+    <dimen name="taskbar_stashed_small_screen_long">190dp</dimen>
+    <!-- <dimen name="taskbar_stashed_small_screen_longest">210dp</dimen> -->
 
     <!-- Bubble bar dimensions for Fuxi (modes 0-4) -->
-    <dimen name="bubblebar_stashed_handle_width_shortest">40dp</dimen>
+    <!-- <dimen name="bubblebar_stashed_handle_width_shortest">40dp</dimen> -->
     <dimen name="bubblebar_stashed_handle_width_short">45dp</dimen>
     <dimen name="bubblebar_stashed_handle_width">55dp</dimen>
     <dimen name="bubblebar_stashed_handle_width_long">85dp</dimen>
-    <dimen name="bubblebar_stashed_handle_width_longest">100dp</dimen>
+    <!-- <dimen name="bubblebar_stashed_handle_width_longest">100dp</dimen> -->
 
 </resources>

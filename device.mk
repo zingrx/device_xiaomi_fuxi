@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EuiccResFuxi \
     FrameworkResOverlayFuxi \
+    Launcher3OverlayFuxi \
     SystemUIOverlayFuxi \
     SettingsProviderResFuxi \
     SettingsOverlayFuxi \
