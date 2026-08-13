@@ -21,4 +21,4 @@
 
 ## Device Picture
 
-![Xiaomi 13](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/p/m/pms_1670745529.40767182.png)
+![Xiaomi 13](https://i.imgur.com/ikrkK8y.png)
