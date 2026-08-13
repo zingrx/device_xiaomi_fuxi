@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2024 The infinityOS Project
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_fuxi.mk
+    $(LOCAL_DIR)/lineage_fuxi.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_fuxi-eng \
-    infinity_fuxi-user \
-    infinity_fuxi-userdebug
+    lineage_fuxi-eng \
+    lineage_fuxi-user \
+    lineage_fuxi-userdebug

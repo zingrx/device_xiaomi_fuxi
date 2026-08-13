@@ -48,6 +48,11 @@ $(call soong_config_set,lineage_powershare,powershare_path,/sys/class/qcom-batte
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.default
 
+# Prebuilt Apps
+ifeq ($(INCLUDE_PREBUILTS), true)
+    $(call inherit-product-if-exists, vendor/apps/prebuilts/config.mk)
+endif
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
